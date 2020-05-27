@@ -2,7 +2,7 @@
 
 namespace Battlenet.Web.Data.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser : IdentityUser<string>
     {
         public string CustomUserName { get; set; }
     }
