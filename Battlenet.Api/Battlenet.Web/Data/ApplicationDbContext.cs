@@ -13,7 +13,7 @@ namespace Battlenet.Web.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=pgsql10-farm76.kinghost.net;Database=primarysoluction;Username=primarysoluction;Password=Nickteam@1");
+            optionsBuilder.UseNpgsql("Host=@;Database=@;Username=@;Password=@");
         }
         public DbSet<Character> Characters { get; set; }
         public DbSet<Connection> Connections { get; set; }
